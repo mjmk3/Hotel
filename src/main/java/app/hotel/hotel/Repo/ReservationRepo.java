@@ -1,5 +1,9 @@
 package app.hotel.hotel.Repo;
 
+import app.hotel.hotel.Domain.Reservation;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
 /**
  * @author MJ Makki
  * @version 1.0
@@ -8,5 +12,6 @@ package app.hotel.hotel.Repo;
  * @since long time ago
  */
 
-public interface ReservationRepo {
+@Repository
+public interface ReservationRepo extends JpaRepository<Reservation, Long> {
 }

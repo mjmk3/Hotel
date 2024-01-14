@@ -1,5 +1,9 @@
 package app.hotel.hotel.Repo;
 
+import app.hotel.hotel.Domain.Room;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
 /**
  * @author MJ Makki
  * @version 1.0
@@ -8,5 +12,6 @@ package app.hotel.hotel.Repo;
  * @since long time ago
  */
 
-public interface RoomRepo {
+@Repository
+public interface RoomRepo extends JpaRepository<Room, Long> {
 }
