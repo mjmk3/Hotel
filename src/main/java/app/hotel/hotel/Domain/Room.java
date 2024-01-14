@@ -33,7 +33,7 @@ public class Room implements Serializable {
     private String roomType;
     private BigDecimal roomNumber;
     private BigDecimal roomPrice;
-    private boolean isBooked;
+    private boolean isBooked = false;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "hotel_id")
